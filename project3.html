@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Completion and Suggestion System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Word Completion and Suggestion System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="project1.html">Instagram Reels Recommendation</a></li>
+        <li><a href="project2.html">Storage Enhancement</a></li>
+        <li><a href="project3.html">Word Completion</a></li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+      <section id="project3">
+        <h2>Project 3: Word Completion and Suggestion System</h2>
+        <p>We’re developing a system that suggests and completes words based on user input, similar to how search engines do it. 
+          This makes typing faster and more intuitive.</p>
+
+        <h4>Ternary Search Tree (TST): To Store a Dictionary of Words and Enable Fast Prefix Searches</h4>
+        <p><strong>What it is:</strong> A Ternary Search Tree is a type of search tree used to store a dynamic set or associative array where the keys are usually strings.</p>
+        <p><strong>Why TST:</strong> TSTs allow efficient storage and querying of words, making them ideal for applications like 
+          autocomplete and spell-checking.</p>
+        <img src="tst.png" alt="Ternary Search Tree" style="width:100%; max-width:400px;">
+        <figcaption>Fig 1. A Ternary Search Tree structure. Source: <a href="https://www.geeksforgeeks.org/ternary-search-tree-deletion/">geeksforgeeks</a></figcaption>
+        <p><strong>Pros and Cons:</strong></p>
+        <ul>
+          <li><strong>Pros:</strong> Fast lookups and insertions; space-efficient for storing prefixes; combines advantages of tries and binary search trees.</li>
+          <li><strong>Cons:</strong> Can be more complex to implement; requires balancing to maintain efficiency.</li>
+        </ul>
+        <p><strong>GitHub Link:</strong> <a href="https://github.com/aadi446153/aps_codes/blob/main/tst.py" target="_blank">Example TST Implementation</a></p>
+        <p><strong>References:</strong> IEEE Transactions on Knowledge and Data Engineering</p>
+
+        <h4>Binary Search Trees (BST): To Maintain and Query Frequently Used Words</h4>
+        <p><strong>What it is:</strong> A Binary Search Tree is a data structure in which each node has at most two children, referred to as the left child and the right child.</p>
+        <p><strong>Why BST:</strong> BSTs help in efficiently maintaining and querying frequently used words, allowing quick lookups and updates.</p>
+        <img src="bst.png" alt="Binary Search Tree" style="width:100%; max-width:400px;">
+        <figcaption>Fig 2. A Binary Search Tree. Source: <a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/">geeksforgeeks</a></figcaption>
+        <p><strong>Pros and Cons:</strong></p>
+        <ul>
+          <li><strong>Pros:</strong> Provides ordered data; supports efficient insertion, deletion, and lookup operations.</li>
+          <li><strong>Cons:</strong> Performance can degrade to \( O(n) \) in the worst case; requires balancing for optimal performance.</li>
+        </ul>
+        <p><strong>GitHub Link:</strong> <a href="https://github.com/aadi446153/aps_codes/blob/main/bst.py" target="_blank">Example BST Implementation</a></p>
+        <p><strong>References:</strong> IEEE Transactions on Software Engineering</p>
+
+        <h4>Auto-Suggestions Algorithm: To Implement the Autocomplete Functionality</h4>
+        <p><strong>What it is:</strong> An auto-suggestions algorithm generates possible completions for a given input based on a predefined dictionary or dataset.</p>
+        <p><strong>Why Autocomplete:</strong> Autocomplete algorithms enhance user experience by predicting and suggesting possible completions, saving time and effort.</p>
+        <p><strong>Levenshtein Automata:</strong>Levenshtein automata are used to quickly correct strings and perform fuzzy searches of words in a dictionary. The Levenshtein distance is a text similarity measure that compares two words and returns a numeric value representing the distance between them. 
+          The distance reflects the total number of single-character edits required to transform one word into another  </p>
+        <p><strong>Reference:</strong><a href="https://julesjacobs.com/2015/06/17/disqus-levenshtein-simple-and-fast.html">Levenshtein</a></p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

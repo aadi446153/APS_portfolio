@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Reels Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Code Repository</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="project1.html">Instagram Reels Recommendation</a></li>
+        <li><a href="project2.html">Storage Enhancement</a></li>
+        <li><a href="project3.html">Word Completion</a></li>
+        <li><a href="conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content">
+      <section id="project1">
+        <h2>Project 1: Instagram Reels Recommendation System</h2>
+        <p>We’re going to build a base framework for recommendation system for Instagram. 
+          It will suggest videos to users based on their watch history, likes, and follows. 
+          Imagine it like giving each user their own personalized TV channel!</p>
+
+        <h4>Radix Tree Data Structure: To Store and Quickly Search User Interests</h4>
+        <p><strong>What it is:</strong> A Radix Tree, also known as a Patricia Trie, is a compacted version of a Trie that stores keys with long common prefixes in compressed nodes.</p>
+        <p><strong>Why Radix Tree:</strong> Radix Trees are used for efficient storage and retrieval of keys with long common prefixes, making them suitable for scenarios where memory efficiency is critical.</p>
+        <img src="radix.png" alt="Radix Tree" style="width:100%; max-width:400px;">
+        <figcaption>Fig 1. A Radix Tree (Patricia Trie) structure. Source: <a href="https://en.wikipedia.org/wiki/Radix_tree">Wikipedia</a></figcaption>
+        <p><strong>Pros and Cons:</strong></p>
+        <ul>
+          <li><strong>Pros:</strong> Memory-efficient due to node compression; optimal for keys with long common prefixes.</li>
+          <li><strong>Cons:</strong> More complex to implement compared to standard Tries; less efficient for datasets with short and varied key lengths.</li>
+        </ul>
+        <p><strong>GitHub Link:</strong> <a href="https://github.com/aadi446153/aps_codes/blob/main/radix.py" target="_blank">Example Radix Tree Implementation</a></p>
+        <p><strong>References:</strong> IEEE Transactions on Knowledge and Data Engineering</p>
+
+        <h4>Heap/Priority Queue: To Rank and Retrieve Top Recommendations</h4>
+        <p><strong>What it is:</strong> A priority queue is a data structure where each element has a priority, and elements are served based on their priority.</p>
+        <p><strong>Why Instagram Uses It:</strong> Heaps are used to rank recommendations based on relevance, ensuring that the most relevant videos are suggested to users first.</p>
+        <img src="heap.png" alt="Radix Tree" style="width:100%; max-width:400px;">
+        <figcaption>Fig 2. A Radix Tree (Patricia Trie) structure. Source: <a href="https://www.geeksforgeeks.org/heap-data-structure/">geeksforgeeks</a></figcaption>
+        
+        <p><strong>Pros and Cons:</strong></p>
+        <ul>
+          <li><strong>Pros:</strong> Efficient for dynamically selecting top elements; simple to implement.</li>
+          <li><strong>Cons:</strong> Not ideal for unordered data; less efficient for non-top elements.</li>
+        </ul>
+        <p><strong>GitHub Link:</strong> <a href="https://github.com/aadi446153/aps_codes/blob/main/priorityqueue.py" target="_blank">Example Priority Queue Implementation</a></p>
+        <p><strong>References:</strong> IEEE Transactions on Software Engineering</p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
